@@ -1,0 +1,12 @@
+- name: 未來生活
+  slug: future-life
+  url: /categories/future-life/
+- name: 城市與夜晚
+  slug: city-and-night
+  url: /categories/city-and-night/
+- name: 短句存檔
+  slug: fragments
+  url: /categories/fragments/
+- name: 實驗筆記
+  slug: lab-notes
+  url: /categories/lab-notes/

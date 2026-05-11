@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="page-shell archive-shell">
+  <header class="page-header">
+    <p class="archive-label">Category</p>
+    <h1>{{ page.category_name }}</h1>
+    {% if page.subtitle %}
+      <p>{{ page.subtitle }}</p>
+    {% else %}
+      <p>收在「{{ page.category_name }}」裡的文字。</p>
+    {% endif %}
+  </header>
+
+  {% assign category_posts = site.posts | where: "category", page.category_name %}
+  {% if category_posts.size > 0 %}
+    <div class="archive-list">
+      {% for post in category_posts %}
+        <article class="archive-item">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+          <div>
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            {% if post.excerpt %}
+              <p>{{ post.excerpt | strip_html }}</p>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-note">這個分類還在等第一篇文字。</p>
+  {% endif %}
+</article>

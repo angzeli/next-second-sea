@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<section class="home-hero" aria-labelledby="home-title">
+  <p class="archive-label">Personal Writing Archive</p>
+  <h1 id="home-title">{{ site.title }}</h1>
+  <p class="home-subtitle">{{ site.description }}</p>
+  <p class="home-intro">
+    這裡收一些短篇、散文、微型小說和生活筆記。有些寫人，有些寫城市，有些寫很久以後仍然需要下班的機器人。
+  </p>
+  <div class="home-actions" aria-label="主要連結">
+    <a class="button button-primary" href="{{ '/writing/' | relative_url }}">進入文字存檔</a>
+    <a class="button button-secondary" href="{{ '/about/' | relative_url }}">關於這裡</a>
+  </div>
+</section>
+
+<section class="home-latest" aria-labelledby="latest-title">
+  <div class="section-heading">
+    <p class="section-kicker">Latest</p>
+    <h2 id="latest-title">最近保存</h2>
+  </div>
+
+  <div class="post-preview-list">
+    {% for post in site.posts limit: 5 %}
+      <article class="post-preview">
+        <div class="post-meta">
+          {% assign category_item = site.data.categories | where: "name", post.category | first %}
+          {% if category_item %}
+            <a class="post-category" href="{{ category_item.url | relative_url }}">{{ category_item.name }}</a>
+          {% else %}
+            <span class="post-category">{{ post.category }}</span>
+          {% endif %}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        </div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.excerpt %}
+          <p>{{ post.excerpt | strip_html }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
