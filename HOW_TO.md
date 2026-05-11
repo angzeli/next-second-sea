@@ -91,7 +91,7 @@ Category pages filter posts by the Traditional Chinese `category` value. The Eng
 │   └── lab-notes/
 ├── assets/
 │   └── css/
-│       └── style.css
+│       └── archive.css
 ├── README.md
 └── Gemfile
 ```

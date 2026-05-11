@@ -64,12 +64,22 @@ img {
 }
 
 .site-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   color: var(--night-blue);
   font-size: 1.04rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   line-height: 1.4;
   text-decoration: none;
+}
+
+.site-mark-symbol {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  display: block;
 }
 
 .site-nav {
@@ -456,6 +466,11 @@ img {
     align-items: flex-start;
     flex-direction: column;
     padding-top: 22px;
+  }
+
+  .site-mark-symbol {
+    width: 22px;
+    height: 22px;
   }
 
   .site-nav {
