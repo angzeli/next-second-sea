@@ -70,7 +70,6 @@ Category pages filter posts by the Traditional Chinese `category` value. The Eng
 ├── index.html
 ├── about.md
 ├── writing.md
-├── projects.md
 ├── 404.html
 ├── _data/
 │   └── categories.yml
@@ -104,7 +103,7 @@ Category pages filter posts by the Traditional Chinese `category` value. The Eng
 
 This is a quiet writing archive. It is not a diary, documentation site, social feed, dashboard, or tech blog.
 
-The site exists to preserve short fiction, essays, fragments, and observations that might otherwise disappear inside chat boxes, notes apps, or unfinished drafts. Technical work can stay connected through the Projects page, but the writing archive should remain calm, literary, and separate from repository noise.
+The site exists to preserve short fiction, essays, fragments, and observations that might otherwise disappear inside chat boxes, notes apps, or unfinished drafts. Technical work can live elsewhere; this archive should remain calm, literary, and separate from repository noise.
 
 ## Design Philosophy
 

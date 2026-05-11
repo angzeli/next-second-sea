@@ -117,8 +117,7 @@ img {
 }
 
 .archive-label,
-.section-kicker,
-.project-status {
+.section-kicker {
   margin: 0 0 16px;
   color: var(--copper);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -229,15 +228,13 @@ img {
 }
 
 .post-preview-list,
-.archive-list,
-.project-index {
+.archive-list {
   display: grid;
   gap: 0;
 }
 
 .post-preview,
-.archive-item,
-.project-entry {
+.archive-item {
   border-bottom: 1px solid rgba(216, 202, 187, 0.84);
 }
 
@@ -247,8 +244,7 @@ img {
 
 .post-preview h3,
 .archive-item h3,
-.archive-item h2,
-.project-entry h2 {
+.archive-item h2 {
   margin: 0;
   color: var(--night-blue);
   font-weight: 500;
@@ -267,8 +263,7 @@ img {
 }
 
 .post-preview p,
-.archive-item p,
-.project-entry p {
+.archive-item p {
   margin: 12px 0 0;
   color: var(--muted);
 }
@@ -427,28 +422,6 @@ img {
   display: grid;
   gap: 6px;
   text-align: right;
-}
-
-.project-entry {
-  padding: 30px 0;
-}
-
-.project-entry h2 {
-  font-size: clamp(1.28rem, 3vw, 1.75rem);
-}
-
-.project-entry a,
-.muted-link {
-  display: inline-block;
-  margin-top: 14px;
-  color: var(--copper);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.86rem;
-  letter-spacing: 0.02em;
-}
-
-.muted-link {
-  color: var(--muted);
 }
 
 .empty-note {
