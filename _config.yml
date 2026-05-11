@@ -3,6 +3,8 @@ description: 一些寫給未來、城市、夜晚和低電量生活的文字。
 author: Angze Li
 lang: zh-Hant
 timezone: Europe/London
+url: "https://angzeli.github.io"
+baseurl: "/next-second-sea"
 permalink: /writing/:year/:month/:day/:title/
 markdown: kramdown
 future: true
