@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "感情最難的地方，是它會讓人看見自己最不體面的那一面"
+title: "感情最難的地方"
 date: 2026-04-28
 category: AI製造
 tags: [感情, 失去, AI]
