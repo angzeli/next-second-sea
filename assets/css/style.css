@@ -1,12 +1,12 @@
 :root {
   --paper: #f5efe4;
-  --paper-soft: #fbf7ef;
+  --paper-soft: #f8f1e7;
   --ink: #1f2528;
   --muted: #6f7477;
-  --line: #d8cabb;
+  --line: #d6c8b8;
   --copper: #b96f45;
   --night-blue: #263746;
-  --shadow: rgba(31, 37, 40, 0.08);
+  --shadow: rgba(31, 37, 40, 0.045);
 }
 
 * {
@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(180deg, rgba(251, 247, 239, 0.72), rgba(245, 239, 228, 0) 320px),
+    linear-gradient(180deg, rgba(248, 241, 231, 0.76), rgba(245, 239, 228, 0) 340px),
     var(--paper);
   color: var(--ink);
   font-family: "Noto Serif TC", "Songti TC", "PMingLiU", Georgia, serif;
@@ -59,15 +59,16 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 28px 0 18px;
-  border-bottom: 1px solid rgba(216, 202, 187, 0.72);
+  padding: 32px 0 20px;
+  border-bottom: 1px solid rgba(214, 200, 184, 0.58);
 }
 
 .site-mark {
   color: var(--night-blue);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-size: 1.04rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
   text-decoration: none;
 }
 
@@ -76,21 +77,23 @@ img {
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 8px 22px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  gap: 8px 26px;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", Georgia, serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
 }
 
 .site-nav a {
-  color: var(--muted);
+  color: rgba(38, 55, 70, 0.74);
   text-decoration: none;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--copper);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.35em;
 }
 
 .site-main {
@@ -108,12 +111,14 @@ img {
 
 .home-hero {
   width: min(100%, 960px);
-  margin: 86px auto 76px;
-  padding: 68px min(8vw, 76px);
-  background: var(--paper-soft);
-  border-top: 5px solid var(--night-blue);
-  border-bottom: 1px solid var(--line);
-  box-shadow: 0 24px 70px var(--shadow);
+  margin: 88px auto 78px;
+  padding: 70px min(8vw, 78px) 72px;
+  background:
+    linear-gradient(180deg, rgba(248, 241, 231, 0.48), rgba(245, 239, 228, 0.16)),
+    var(--paper);
+  border-top: 2px solid rgba(38, 55, 70, 0.76);
+  border-bottom: 1px solid rgba(214, 200, 184, 0.68);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
 }
 
 .archive-label,
@@ -121,9 +126,9 @@ img {
   margin: 0 0 16px;
   color: var(--copper);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.18em;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -140,8 +145,8 @@ img {
 
 .home-subtitle {
   max-width: 680px;
-  margin: 32px 0 0;
-  color: var(--copper);
+  margin: 34px 0 0;
+  color: #a76643;
   font-size: clamp(1.08rem, 2vw, 1.34rem);
   line-height: 1.8;
 }
@@ -162,34 +167,41 @@ img {
 .button {
   display: inline-flex;
   align-items: center;
-  min-height: 46px;
-  padding: 10px 18px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.84rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  min-height: 42px;
+  padding: 9px 16px;
+  border: 1px solid rgba(185, 111, 69, 0.3);
+  border-radius: 4px;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", Georgia, serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   line-height: 1.25;
   text-decoration: none;
 }
 
 .button-primary {
-  background: var(--night-blue);
-  border-color: var(--night-blue);
-  color: var(--paper-soft);
+  background: rgba(38, 55, 70, 0.06);
+  border-color: rgba(38, 55, 70, 0.34);
+  color: var(--night-blue);
 }
 
 .button-primary:hover,
 .button-primary:focus {
-  background: var(--copper);
-  border-color: var(--copper);
-  color: var(--paper-soft);
+  background: rgba(38, 55, 70, 0.1);
+  border-color: rgba(38, 55, 70, 0.48);
+  color: var(--night-blue);
 }
 
 .button-secondary {
-  background: transparent;
-  color: var(--night-blue);
+  background: rgba(185, 111, 69, 0.035);
+  color: #8f5538;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background: rgba(185, 111, 69, 0.08);
+  border-color: rgba(185, 111, 69, 0.42);
+  color: #824d34;
 }
 
 .home-latest,
@@ -209,7 +221,7 @@ img {
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 24px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(214, 200, 184, 0.76);
 }
 
 .section-heading h2,
