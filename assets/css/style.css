@@ -9,6 +9,68 @@
   --shadow: rgba(31, 37, 40, 0.045);
   --font-serif: "Songti TC", "Songti SC", "STSongti-TC-Regular", "STSong", "PMingLiU", "MingLiU", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --paper-wash-start: rgba(248, 241, 231, 0.76);
+  --paper-wash-end: rgba(245, 239, 228, 0);
+  --link-underline: rgba(185, 111, 69, 0.46);
+  --header-line: rgba(214, 200, 184, 0.58);
+  --nav-ink: rgba(38, 55, 70, 0.74);
+  --footer-line: rgba(216, 202, 187, 0.64);
+  --hero-wash-start: rgba(248, 241, 231, 0.48);
+  --hero-wash-end: rgba(245, 239, 228, 0.16);
+  --hero-rule: rgba(38, 55, 70, 0.76);
+  --hero-line: rgba(214, 200, 184, 0.68);
+  --hero-inset: rgba(255, 255, 255, 0.28);
+  --copper-soft: #a76643;
+  --button-border: rgba(185, 111, 69, 0.3);
+  --button-primary-bg: rgba(38, 55, 70, 0.06);
+  --button-primary-border: rgba(38, 55, 70, 0.34);
+  --button-primary-bg-hover: rgba(38, 55, 70, 0.1);
+  --button-primary-border-hover: rgba(38, 55, 70, 0.48);
+  --button-secondary-bg: rgba(185, 111, 69, 0.035);
+  --button-secondary-text: #8f5538;
+  --button-secondary-bg-hover: rgba(185, 111, 69, 0.08);
+  --button-secondary-border-hover: rgba(185, 111, 69, 0.42);
+  --button-secondary-text-hover: #824d34;
+  --section-line: rgba(214, 200, 184, 0.76);
+  --item-line: rgba(216, 202, 187, 0.84);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #11181d;
+    --paper-soft: #172027;
+    --ink: #e8dfd1;
+    --muted: #a99f92;
+    --line: #34424b;
+    --copper: #c9855c;
+    --night-blue: #d7e0e7;
+    --shadow: rgba(0, 0, 0, 0.28);
+    --paper-wash-start: rgba(23, 32, 39, 0.78);
+    --paper-wash-end: rgba(17, 24, 29, 0);
+    --link-underline: rgba(201, 133, 92, 0.58);
+    --header-line: rgba(52, 66, 75, 0.72);
+    --nav-ink: rgba(215, 224, 231, 0.72);
+    --footer-line: rgba(52, 66, 75, 0.72);
+    --hero-wash-start: rgba(23, 32, 39, 0.62);
+    --hero-wash-end: rgba(17, 24, 29, 0.24);
+    --hero-rule: rgba(215, 224, 231, 0.56);
+    --hero-line: rgba(52, 66, 75, 0.74);
+    --hero-inset: rgba(232, 223, 209, 0.08);
+    --copper-soft: #d0936d;
+    --button-border: rgba(201, 133, 92, 0.34);
+    --button-primary-bg: rgba(215, 224, 231, 0.08);
+    --button-primary-border: rgba(215, 224, 231, 0.28);
+    --button-primary-bg-hover: rgba(215, 224, 231, 0.12);
+    --button-primary-border-hover: rgba(215, 224, 231, 0.42);
+    --button-secondary-bg: rgba(201, 133, 92, 0.08);
+    --button-secondary-text: #d39a76;
+    --button-secondary-bg-hover: rgba(201, 133, 92, 0.13);
+    --button-secondary-border-hover: rgba(201, 133, 92, 0.48);
+    --button-secondary-text-hover: #e0aa88;
+    --section-line: rgba(52, 66, 75, 0.78);
+    --item-line: rgba(52, 66, 75, 0.7);
+  }
 }
 
 * {
@@ -22,7 +84,7 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(180deg, rgba(248, 241, 231, 0.76), rgba(245, 239, 228, 0) 340px),
+    linear-gradient(180deg, var(--paper-wash-start), var(--paper-wash-end) 340px),
     var(--paper);
   color: var(--ink);
   font-family: var(--font-serif);
@@ -34,7 +96,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration-color: rgba(185, 111, 69, 0.46);
+  text-decoration-color: var(--link-underline);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.22em;
 }
@@ -47,6 +109,12 @@ a:focus {
 
 img {
   max-width: 100%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2.4rem 0;
 }
 
 .site-header,
@@ -62,7 +130,7 @@ img {
   justify-content: space-between;
   gap: 24px;
   padding: 32px 0 20px;
-  border-bottom: 1px solid rgba(214, 200, 184, 0.58);
+  border-bottom: 1px solid var(--header-line);
 }
 
 .site-mark {
@@ -97,7 +165,7 @@ img {
 }
 
 .site-nav a {
-  color: rgba(38, 55, 70, 0.74);
+  color: var(--nav-ink);
   text-decoration: none;
 }
 
@@ -119,7 +187,7 @@ img {
   font-family: var(--font-sans);
   font-size: 0.78rem;
   letter-spacing: 0.04em;
-  border-top: 1px solid rgba(216, 202, 187, 0.64);
+  border-top: 1px solid var(--footer-line);
 }
 
 .home-hero {
@@ -127,11 +195,11 @@ img {
   margin: 88px auto 78px;
   padding: 70px min(8vw, 78px) 72px;
   background:
-    linear-gradient(180deg, rgba(248, 241, 231, 0.48), rgba(245, 239, 228, 0.16)),
+    linear-gradient(180deg, var(--hero-wash-start), var(--hero-wash-end)),
     var(--paper);
-  border-top: 2px solid rgba(38, 55, 70, 0.76);
-  border-bottom: 1px solid rgba(214, 200, 184, 0.68);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  border-top: 2px solid var(--hero-rule);
+  border-bottom: 1px solid var(--hero-line);
+  box-shadow: inset 0 1px 0 var(--hero-inset);
 }
 
 .archive-label,
@@ -160,7 +228,7 @@ img {
 .home-subtitle {
   max-width: 680px;
   margin: 34px 0 0;
-  color: #a76643;
+  color: var(--copper-soft);
   font-family: var(--font-serif);
   font-size: clamp(1.08rem, 2vw, 1.34rem);
   line-height: 1.8;
@@ -185,7 +253,7 @@ img {
   align-items: center;
   min-height: 42px;
   padding: 9px 16px;
-  border: 1px solid rgba(185, 111, 69, 0.3);
+  border: 1px solid var(--button-border);
   border-radius: 4px;
   font-family: var(--font-sans);
   font-size: 0.92rem;
@@ -196,28 +264,28 @@ img {
 }
 
 .button-primary {
-  background: rgba(38, 55, 70, 0.06);
-  border-color: rgba(38, 55, 70, 0.34);
+  background: var(--button-primary-bg);
+  border-color: var(--button-primary-border);
   color: var(--night-blue);
 }
 
 .button-primary:hover,
 .button-primary:focus {
-  background: rgba(38, 55, 70, 0.1);
-  border-color: rgba(38, 55, 70, 0.48);
+  background: var(--button-primary-bg-hover);
+  border-color: var(--button-primary-border-hover);
   color: var(--night-blue);
 }
 
 .button-secondary {
-  background: rgba(185, 111, 69, 0.035);
-  color: #8f5538;
+  background: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
 }
 
 .button-secondary:hover,
 .button-secondary:focus {
-  background: rgba(185, 111, 69, 0.08);
-  border-color: rgba(185, 111, 69, 0.42);
-  color: #824d34;
+  background: var(--button-secondary-bg-hover);
+  border-color: var(--button-secondary-border-hover);
+  color: var(--button-secondary-text-hover);
 }
 
 .home-latest,
@@ -237,7 +305,7 @@ img {
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 24px;
-  border-bottom: 1px solid rgba(214, 200, 184, 0.76);
+  border-bottom: 1px solid var(--section-line);
 }
 
 .section-heading h2,
@@ -263,7 +331,7 @@ img {
 
 .post-preview,
 .archive-item {
-  border-bottom: 1px solid rgba(216, 202, 187, 0.84);
+  border-bottom: 1px solid var(--item-line);
 }
 
 .post-preview {

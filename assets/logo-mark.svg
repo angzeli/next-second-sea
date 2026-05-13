@@ -1,6 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
   <title id="title">下一秒想去看海 logo mark</title>
   <desc id="desc">A quiet night-blue circular seal with a small copper editorial notch.</desc>
-  <path fill="#263746" d="M32 10.5c12.05 0 21.5 9.18 21.5 21.18 0 12.12-9.37 21.82-21.5 21.82-12.22 0-21.5-9.6-21.5-21.62 0-12.15 9.55-21.38 21.5-21.38Z"/>
-  <path fill="#b96f45" d="M42.7 42.45h9.9v3.7h-9.9z"/>
+  <style>
+    .seal { fill: #263746; }
+    .accent { fill: #b96f45; }
+    @media (prefers-color-scheme: dark) {
+      .seal { fill: #d7e0e7; }
+      .accent { fill: #c9855c; }
+    }
+  </style>
+  <path class="seal" d="M32 10.5c12.05 0 21.5 9.18 21.5 21.18 0 12.12-9.37 21.82-21.5 21.82-12.22 0-21.5-9.6-21.5-21.62 0-12.15 9.55-21.38 21.5-21.38Z"/>
+  <path class="accent" d="M42.7 42.45h9.9v3.7h-9.9z"/>
 </svg>
