@@ -7,5 +7,10 @@
   <nav class="site-nav" aria-label="主要導覽">
     <a href="{{ '/writing/' | relative_url }}">文字</a>
     <a href="{{ '/about/' | relative_url }}">關於</a>
+    <span class="theme-toggle" role="group" aria-label="色彩模式">
+      <button class="theme-option" type="button" data-theme-choice="light" aria-label="切換到日間模式" aria-pressed="false">日</button>
+      <span class="theme-separator" aria-hidden="true">／</span>
+      <button class="theme-option" type="button" data-theme-choice="dark" aria-label="切換到夜間模式" aria-pressed="false">夜</button>
+    </span>
   </nav>
 </header>

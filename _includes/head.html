@@ -2,9 +2,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | escape }}">
-  <meta name="theme-color" content="#f5efe4" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#11181d" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5efe4" media="(prefers-color-scheme: light)" data-theme-color="light">
+  <meta name="theme-color" content="#11181d" media="(prefers-color-scheme: dark)" data-theme-color="dark">
   <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <script>
+    (function () {
+      var theme;
+
+      try {
+        theme = window.localStorage.getItem("theme");
+      } catch (error) {
+        theme = null;
+      }
+
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    }());
+  </script>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script defer src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
 </head>
