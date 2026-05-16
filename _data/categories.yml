@@ -4,6 +4,9 @@
 - name: 城市與夜晚
   slug: city-and-night
   url: /categories/city-and-night/
+- name: 生活
+  slug: life
+  url: /categories/life/
 - name: 短句存檔
   slug: fragments
   url: /categories/fragments/
@@ -13,3 +16,6 @@
 - name: 思想札記
   slug: thought-notes
   url: /categories/thought-notes/
+- name: AI製造
+  slug: made-in-ai
+  url: /categories/made-in-ai/

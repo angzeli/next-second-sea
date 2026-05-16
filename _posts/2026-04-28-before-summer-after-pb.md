@@ -3,7 +3,7 @@ layout: post
 title: "夏天之前，PB之後"
 date: 2026-04-28
 category: 生活
-tags: [心情，生活]
+tags: [心情, 生活]
 excerpt: "半個月前，我這個從來沒有接觸過長跑的人，暗自立下了 5K 跑進 25 分鐘的目標。"
 ---
 

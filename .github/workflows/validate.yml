@@ -1,0 +1,25 @@
+name: Validate site
+
+"on":
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Validate content data
+        run: bundle exec ruby scripts/validate_site.rb
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build

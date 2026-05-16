@@ -1,0 +1,7 @@
+{% assign category_name = include.category %}
+{% assign category_item = site.data.categories | where: "name", category_name | first %}
+{% if category_item %}
+  <a class="post-category" href="{{ category_item.url | relative_url }}">{{ category_item.name }}</a>
+{% elsif category_name %}
+  <span class="post-category">{{ category_name }}</span>
+{% endif %}

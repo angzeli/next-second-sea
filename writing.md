@@ -20,12 +20,7 @@ permalink: /writing/
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m.%d" }}</time>
           <div>
             <div class="post-meta">
-              {% assign category_item = site.data.categories | where: "name", post.category | first %}
-              {% if category_item %}
-                <a class="post-category" href="{{ category_item.url | relative_url }}">{{ category_item.name }}</a>
-              {% else %}
-                <span class="post-category">{{ post.category }}</span>
-              {% endif %}
+              {% include category-link.html category=post.category %}
             </div>
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             {% if post.excerpt %}

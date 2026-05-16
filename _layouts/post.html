@@ -5,12 +5,7 @@ layout: default
 <article class="post-shell">
   <header class="post-header">
     <div class="post-meta">
-      {% assign category_item = site.data.categories | where: "name", page.category | first %}
-      {% if category_item %}
-        <a class="post-category" href="{{ category_item.url | relative_url }}">{{ category_item.name }}</a>
-      {% else %}
-        <span class="post-category">{{ page.category }}</span>
-      {% endif %}
+      {% include category-link.html category=page.category %}
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>
     </div>
 

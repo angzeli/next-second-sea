@@ -7,7 +7,6 @@ url: "https://angzeli.github.io"
 baseurl: "/next-second-sea"
 permalink: /writing/:year/:month/:day/:title/
 markdown: kramdown
-future: true
 
 defaults:
   - scope:
