@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "不可能宇宙裡飄散的微粒"
+title_lines:
+  - 不可能宇宙裡
+  - 飄散的微粒
 date: 2025-11-12
 category: 城市與夜晚
 tags: [現實, 偶然, 分離]

@@ -647,6 +647,10 @@ html[data-theme="dark"] .theme-option[data-theme-choice="dark"] {
   font-size: clamp(2.5rem, 8vw, 5.4rem);
 }
 
+.post-title-line {
+  display: block;
+}
+
 .post-excerpt {
   max-width: 640px;
   margin: 24px 0 0;

@@ -25,3 +25,5 @@ The implementation avoids Bootstrap, Tailwind, analytics, comments, search, tag 
 ## 🛠 Maintenance
 
 Setup, post authoring, category mapping, repository structure, and deployment notes live in [HOW_TO.md](HOW_TO.md).
+
+Post titles can optionally define `title_lines` in front matter for deliberate visual line breaks on the individual post page. Keep `title` as the canonical title for metadata, archive listings, category pages, and browser titles.
