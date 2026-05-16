@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "夏天之前，PB之後"
+title_lines:
+  - 夏天之前，
+  - PB之後
 date: 2026-04-28
 category: 生活
 tags: [心情, 生活]

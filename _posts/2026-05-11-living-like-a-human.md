@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "像人一樣活著"
+title_lines:
+  - 像人一樣
+  - 活著
 date: 2026-05-11
 category: 實驗筆記
 tags: [存在, 活著, AI]
