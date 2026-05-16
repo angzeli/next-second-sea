@@ -640,15 +640,28 @@ html[data-theme="dark"] .theme-option[data-theme-choice="dark"] {
   border-bottom: 1px solid var(--line);
 }
 
-.post-header h1 {
-  max-width: 12ch;
+.post-title {
+  max-width: min(100%, 9em);
   margin: 12px 0 0;
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 8vw, 5.4rem);
+  font-size: clamp(2.55rem, 7vw, 5rem);
+  line-height: 1.12;
+  overflow-wrap: normal;
+  text-wrap: pretty;
+  word-break: normal;
+}
+
+.post-title-manual {
+  max-width: 100%;
 }
 
 .post-title-line {
   display: block;
+  white-space: nowrap;
+}
+
+.post-title-line + .post-title-line {
+  margin-top: 0.02em;
 }
 
 .post-excerpt {

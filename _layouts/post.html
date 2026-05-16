@@ -9,7 +9,7 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>
     </div>
 
-    <h1>
+    <h1 class="post-title{% if page.title_lines %} post-title-manual{% endif %}">
       {% if page.title_lines %}
         {% for line in page.title_lines %}
           <span class="post-title-line">{{ line }}</span>
