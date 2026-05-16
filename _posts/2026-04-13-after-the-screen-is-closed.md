@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "合上螢幕之後"
-date: 2026-05-13
+date: 2026-04-13
 category: 思想札記
 tags: [情感, 虛假, 現實]
 excerpt: "性格惡劣而又令人喜歡的人物終究只建立在虛假的螢幕上。"
