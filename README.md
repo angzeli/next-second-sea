@@ -44,3 +44,28 @@ title_lines:
 ```
 
 The normal `title` is still used for listings and metadata.
+
+## 🖼 Adding Images To Posts
+
+Put post images in:
+
+```text
+assets/images/posts/
+```
+
+Use normal Markdown for simple inline images:
+
+```markdown
+![Alt text](/assets/images/posts/example.jpg)
+```
+
+Use a semantic figure when the image needs a caption:
+
+```html
+<figure>
+  <img src="/assets/images/posts/example.jpg" alt="Alt text">
+  <figcaption>Caption text.</figcaption>
+</figure>
+```
+
+Use meaningful alt text unless the image is purely decorative. Captions add context for readers, but they do not replace alt text. Use descriptive filenames, compress images before committing, prefer `.jpg` or `.webp` for photos, and prefer `.png` or `.svg` for diagrams. Keep images reasonably sized so the archive stays light.

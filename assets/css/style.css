@@ -580,6 +580,33 @@ html[data-theme="dark"] .theme-option[data-theme-choice="dark"] {
   margin: 1.05em 0;
 }
 
+.post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2.5rem auto;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+}
+
+.post-content figure {
+  margin: 3rem 0;
+}
+
+.post-content figure img {
+  margin: 0 auto;
+}
+
+.post-content figcaption {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  text-align: center;
+}
+
 .category-filter {
   display: flex;
   flex-wrap: wrap;
