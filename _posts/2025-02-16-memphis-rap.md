@@ -2,8 +2,8 @@
 layout: post
 title: "Memphis Rap：幽暗氛圍與地下傳奇的誕生"
 title_lines:
-  - Memphis Rap：幽暗氛圍與
-  - 地下傳奇的誕生
+  - Memphis Rap：幽暗氛圍
+  - 與地下傳奇的誕生
 date: 2025-02-16
 category: 知識切片
 tags: [嘻哈, 知識]
