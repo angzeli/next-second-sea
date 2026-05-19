@@ -13,6 +13,9 @@
 - name: 實驗筆記
   slug: lab-notes
   url: /categories/lab-notes/
+- name: 知識切片
+  slug: knowledge-slices
+  url: /categories/knowledge-slices/
 - name: 思想札記
   slug: thought-notes
   url: /categories/thought-notes/

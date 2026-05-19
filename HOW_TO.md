@@ -61,6 +61,7 @@ The mapping lives in `_data/categories.yml`:
 | `生活` | `/categories/life/` |
 | `短句存檔` | `/categories/fragments/` |
 | `實驗筆記` | `/categories/lab-notes/` |
+| `知識切片` | `/categories/knowledge-slices/` |
 | `思想札記` | `/categories/thought-notes/` |
 | `AI製造` | `/categories/made-in-ai/` |
 
@@ -117,6 +118,7 @@ GitHub Actions runs this validator and `bundle exec jekyll build` on pushes and 
 │   ├── life/
 │   ├── fragments/
 │   ├── lab-notes/
+│   ├── knowledge-slices/
 │   ├── thought-notes/
 │   └── made-in-ai/
 ├── assets/

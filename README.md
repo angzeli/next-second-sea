@@ -16,6 +16,14 @@ This is a quiet writing archive. It is not a diary, documentation site, social f
 
 The site exists to preserve short fiction, essays, fragments, and observations that might otherwise disappear inside chat boxes, notes apps, or unfinished drafts. Technical work can live elsewhere; this archive should remain calm, literary, and separate from repository noise.
 
+## 🗂 Categories
+
+| Category | Public URL |
+| --- | --- |
+| `知識切片` | `/categories/knowledge-slices/` |
+
+`知識切片` is for structured explanatory writing, popular-science style essays, art/history explainers, and knowledge notes. It is more serious and explanatory than the literary categories, but should still keep the site’s quiet writing-archive tone.
+
 ## 🎨 Design Philosophy
 
 The visual language is built around warm paper, night-blue ink, copper accents, wide spacing, and serif typography. The site should feel like a personal magazine or small archive rather than a default GitHub Pages theme.
