@@ -580,6 +580,19 @@ html[data-theme="dark"] .theme-option[data-theme-choice="dark"] {
   margin: 1.05em 0;
 }
 
+.poem {
+  margin-top: 2rem;
+  line-height: 2.05;
+}
+
+.poem p {
+  margin: 0 0 1.8rem 0;
+}
+
+.poem p:last-child {
+  margin-bottom: 0;
+}
+
 .post-content img {
   display: block;
   max-width: 100%;
