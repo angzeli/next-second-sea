@@ -1,7 +1,7 @@
 ---
 layout: category
-title: 短句存檔
-category_name: 短句存檔
+title: 詩與短章
+category_name: 詩與短章
 permalink: /categories/fragments/
-subtitle: 沒有成為長篇，但仍然值得留下的句子。
+subtitle: 一些詩、短章，和仍然值得留下的片段。
 ---
