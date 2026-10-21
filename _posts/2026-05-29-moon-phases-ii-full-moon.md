@@ -5,7 +5,7 @@ title_lines:
   - 月相之二：
   - 滿月
 date: 2026-05-29
-category: 短句存檔
+category: 詩與短章
 tags: [月亮, 圓滿, 失去, 夜晚]
 excerpt: "你掛在天上的時候，我知道你下一秒就要遠行。"
 ---

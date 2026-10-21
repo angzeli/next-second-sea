@@ -5,7 +5,7 @@ title_lines:
   - 樹與落葉
   - 的分別
 date: 2024-12-29
-category: 城市與夜晚
+category: 人間紀事
 tags: [分別, 落葉]
 excerpt: "我總是不後悔的，正如樹不會惋惜與落葉的分別。"
 ---

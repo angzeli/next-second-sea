@@ -5,7 +5,7 @@ title_lines:
   - 最後一種
   - 靠近
 date: 2026-05-17
-category: AI製造
+category: 人間紀事
 tags: [邊界, 情感, 關係]
 excerpt: "兩個人要長久地留在彼此生命裡，不能只靠靠近，也要學會保持距離。"
 ---

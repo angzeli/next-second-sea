@@ -5,7 +5,7 @@ title_lines:
   - 沒有被誤解
   - 的瞬間
 date: 2026-06-28
-category: 思想札記
+category: 人間紀事
 tags: [理解, 誤解, 親密, 關係, 寬容]
 excerpt: "我俯身吻她時，竟隱約感到一種遲來的寬容。"
 ---

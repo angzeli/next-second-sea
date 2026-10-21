@@ -2,7 +2,7 @@
 layout: post
 title: "靈魂的重量"
 date: 2026-05-14
-category: 短句存檔
+category: 詩與短章
 tags: [面具, 靈魂]
 excerpt: "據說靈魂的重量是 21 克。"
 ---

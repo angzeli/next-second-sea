@@ -5,7 +5,7 @@ title_lines:
   - 不可能宇宙裡
   - 飄散的微粒
 date: 2025-11-13
-category: 城市與夜晚
+category: 人間紀事
 tags: [現實, 偶然, 分離]
 excerpt: "寫在《不可能宇宙裡飄散的微粒》之後。"
 ---

@@ -5,7 +5,7 @@ title_lines:
   - 知命者
   - 亦在命中
 date: 2026-08-06
-category: 思想札記
+category: 故事存檔
 tags: [命運,因果,宿命,自由意志,知命,見證]
 excerpt: "既然一切終將發生，我至少要親眼看見。"
 ---

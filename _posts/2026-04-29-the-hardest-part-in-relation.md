@@ -5,7 +5,7 @@ title_lines:
   - 感情最難的
   - 地方
 date: 2026-04-29
-category: AI製造
+category: 人間紀事
 tags: [感情, 失去, AI]
 excerpt: "以前我總覺得，感情裡最痛的事情是失去。"
 ---

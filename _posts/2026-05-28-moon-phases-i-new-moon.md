@@ -5,7 +5,7 @@ title_lines:
   - 月相之一：
   - 新月
 date: 2026-05-28
-category: 短句存檔
+category: 詩與短章
 tags: [月亮, 缺席, 相信, 等待, 夜晚]
 excerpt: "你躲在雲後的時候，我不知道你是否還在那裡。"
 ---

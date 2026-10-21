@@ -2,7 +2,7 @@
 layout: post
 title: "全部的真相"
 date: 2026-05-13
-category: 思想札記
+category: 人間紀事
 tags: [理性, 衝動, 慾望]
 excerpt: "在那個當下，我們的所見即是全部的真相。"
 ---

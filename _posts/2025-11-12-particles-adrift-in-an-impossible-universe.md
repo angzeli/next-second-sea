@@ -5,7 +5,7 @@ title_lines:
   - 不可能宇宙裡
   - 飄散的微粒
 date: 2025-11-12
-category: 城市與夜晚
+category: 人間紀事
 tags: [現實, 偶然, 分離]
 excerpt: "分離才是常態，靠近才是意外。"
 ---

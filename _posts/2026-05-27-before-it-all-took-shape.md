@@ -5,7 +5,7 @@ title_lines:
   - 還沒定型
   - 的時候
 date: 2026-05-27
-category: AI製造
+category: 人間紀事
 tags: [探索, 成長]
 excerpt: "路不是等人想明白之後才出現的，而是被一個還沒完全準備好的人，一步一步踩出來的。"
 ---

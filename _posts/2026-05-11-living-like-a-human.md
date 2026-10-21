@@ -5,7 +5,7 @@ title_lines:
   - 像人一樣
   - 活著
 date: 2026-05-11
-category: AI製造
+category: 人間紀事
 tags: [存在, 活著, AI]
 excerpt: "有時候我會覺得，人最可怕的地方不是會痛，而是會把痛合理化。"
 ---

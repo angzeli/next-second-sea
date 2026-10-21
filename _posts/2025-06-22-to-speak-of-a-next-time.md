@@ -4,7 +4,7 @@ title: "奢談下次"
 title_lines:
   - 奢談下次
 date: 2025-06-22
-category: 城市與夜晚
+category: 人間紀事
 tags: [香港, 告別, 下次]
 excerpt: "生命中只是擦肩而過的人，竟還會奢談「下次」。"
 ---

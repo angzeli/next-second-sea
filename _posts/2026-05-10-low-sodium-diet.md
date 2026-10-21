@@ -2,7 +2,7 @@
 layout: post
 title: "低鈉飲食"
 date: 2026-05-10
-category: 未來生活
+category: 故事存檔
 tags: [微型小說, 未來, 城市]
 excerpt: "2100 年的 9 月 3 日晚上 10 點，我結束了今天 18 小時的工作。"
 ---
